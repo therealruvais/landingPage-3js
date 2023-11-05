@@ -1,0 +1,11 @@
+Model Information:
+* title:	Estrutura de um robô
+* source:	https://sketchfab.com/3d-models/estrutura-de-um-robo-b15d7a05c8484f92b3a7859f536c0bcb
+* author:	mariana.com520 (https://sketchfab.com/mariana.com520)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Estrutura de um robô" (https://sketchfab.com/3d-models/estrutura-de-um-robo-b15d7a05c8484f92b3a7859f536c0bcb) by mariana.com520 (https://sketchfab.com/mariana.com520) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
