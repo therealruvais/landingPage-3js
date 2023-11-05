@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 2, 130], fov: 100 }}
+      camera={{ position: [20, 2, 70], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <App />

@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useFrame } from "@react-three/fiber";
 
 const RobotCanvas = () => {
-  const robot = useGLTF("./robot/scene.gltf");
+  const robot = useGLTF("./eva/scene.gltf");
   const robo = useRef();
   const scroll = useScroll();
   const tl = useRef();
@@ -43,27 +43,25 @@ const RobotCanvas = () => {
   }, []);
 
   return (
-   
-        <mesh ref={robo}>
-          <ambientLight intensity={1} />
-          <spotLight
-            position={[70, 10, 5]}
-            angle={1.3}
-            penumbra={1}
-            castShadow
-            intensity={2}
-            shadow-bias={-0.0001}
-            target={robot.scene}
-          />
+    <mesh ref={robo}>
+      <ambientLight intensity={1} />
+      <spotLight
+        position={[0, 1, 0.5]}
+        angle={1.3}
+        penumbra={1}
+        castShadow
+        intensity={2}
+        shadow-bias={-0.0001}
+        target={robot.scene}
+      />
 
-          <primitive
-            object={robot.scene}
-            scale={0.3}
-            position={[70, 10, 5]}
-            rotation={[0, 0, 0]}
-            
-          />
-        </mesh>
+      <primitive
+        object={robot.scene}
+        scale={5}
+        position={[0, 1, 0.5]}
+        rotation={[0, 0, 0]}
+      />
+    </mesh>
   );
 };
 

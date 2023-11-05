@@ -1,10 +1,8 @@
 import {
   ScrollControls,
   Scroll,
-  OrbitControls,
   Preload,
-  Backdrop,
-  Stars,
+  Sparkles,
 } from "@react-three/drei";
 import RobotCanvas from "./components/RobotCanvas";
 import { Suspense, useEffect } from "react";
@@ -25,7 +23,7 @@ const App = () => {
     <>
       <color
         attach="background"
-        args={["#242424"]}
+        args={["#293b49"]}
       />
 
       <ScrollControls
@@ -33,24 +31,15 @@ const App = () => {
         damping={0.1}
       >
         <Suspense fallback={<Loader />}>
-          <OrbitControls
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-            enableZoom={false}
-          />
           <RobotCanvas />
         </Suspense>
         <Preload all />
-        <Stars
-          radius={100}
-          depth={50}
-          count={5000}
-          factor={4}
-          saturation={0}
-          fade
-          speed={2}
-        />
-
+        <Sparkles
+          count={1000}
+          size={100}
+          color={"#fff"}
+          scale={[80, 80, 80]}
+        ></Sparkles>
         <Scroll></Scroll>
         <Scroll
           html
