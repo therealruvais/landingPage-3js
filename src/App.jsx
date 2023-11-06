@@ -9,12 +9,13 @@ import { Suspense, useEffect } from "react";
 import Loader from "./components/Loader";
 import baffle from "baffle";
 
+
 const App = () => {
   useEffect(() => {
     const target = baffle(".title");
     target.set({
       characters: "░P░h░a░n░t░o░m░",
-      speed: 100,
+      speed: 150,
     });
     target.start();
     target.reveal(1000, 1000);
@@ -23,7 +24,7 @@ const App = () => {
     <>
       <color
         attach="background"
-        args={["#293b49"]}
+        args={["#0a1a1f"]}
       />
 
       <ScrollControls
@@ -36,10 +37,12 @@ const App = () => {
         <Preload all />
         <Sparkles
           count={1000}
+          speed={5}
           size={100}
           color={"#fff"}
           scale={[80, 80, 80]}
         ></Sparkles>
+        
         <Scroll></Scroll>
         <Scroll
           html

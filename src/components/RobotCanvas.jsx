@@ -44,7 +44,7 @@ const RobotCanvas = () => {
 
   return (
     <mesh ref={robo}>
-      <ambientLight intensity={1} />
+      <ambientLight intensity={2} />
       <spotLight
         position={[0, 1, 0.5]}
         angle={1.3}
