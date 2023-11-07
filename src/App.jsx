@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const target = baffle(".title");
     target.set({
-      characters: "░P░h░a░n░t░o░m░",
+      characters: "░e░v░a░",
       speed: 150,
     });
     target.start();
@@ -59,7 +59,7 @@ const App = () => {
               transform: `translate(-50%,-50%)`,
             }}
           >
-            PHANTOM
+            EVA
           </h1>
 
           <div
